@@ -13,9 +13,18 @@ def read_csv(csv_table):
 	# f = f.read()
 	# maybe = csv.Sniffer()
 	# return maybe.has_header(f)
-	data = f.read()
-	other = data.strip()
-	other = data.split(',')
+	head = f.readline().rstrip().split(',')
+	# return head
+	for line in f:
+		last_name, first_name, side, group = line.rstrip().split(',')
+		info_tuple = (last_name, first_name)
+
+		attendees_imm[side] = [(last_name, first_name)]
+
+		
+
+
+	# return line
 
 	# new_header = header.split(',')
 	# return header
@@ -28,8 +37,8 @@ def read_csv(csv_table):
 
 	f.close()
 
-	return other
-
+	# return body
+	return attendees_imm
 
 
 def connect_to_db():
