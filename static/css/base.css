@@ -1,0 +1,21 @@
+.panel-heading {
+  padding: 0px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+ul.list-group a {
+    text-indent: 1.5em;
+  }
+
+  .table {
+    margin-bottom: 0;
+  }
+
+.panel {
+    height: inherit;
+}
+
+.panel-body {
+    vertical-align: inherit;
+}
