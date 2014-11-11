@@ -1,9 +1,6 @@
 'use strict';
 
-var weddingApp = angular.module('weddingApp', []).config(function ($interpolateProvider)
-    {
-        $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
-    });
+
 
 weddingApp.controller('GuestPartyCtrl', function ($scope, $http)
 {

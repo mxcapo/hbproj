@@ -7,7 +7,8 @@
         <link href="../static/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="../static/css/base.css" rel="stylesheet">
         <script src="../static/js/angular/angular.js"></script>
-        <script src="../static/js/partycard.js"></script>
+        <script src="../static/js/app.js"></script>
+        <script src="../static/js/controllers.js"></script>
 
     </head>
     <body ng-controller="GuestPartyCtrl">
@@ -31,7 +32,7 @@
                             <table class="table">
                                 <tr>
                                     <td ng-repeat="guest in party.guests">
-                                        <h3 class="panel-title">{[{guest[1] + ' ' + guest[0]}]}</h3>
+                                        <h3 class="panel-title">{[{guest.first_name + ' ' + guest.last_name}]}</h3>
                                     </td>
                                 </tr>
                             </table>
@@ -49,7 +50,7 @@
                                 </li>
                                     <div class="list-group">
                                         <a href="#" class="list-group-item" ng-repeat="guest in party.guests">
-                                        {[{guest[1] + ' ' + guest[0]}]}
+                                        {[{guest.first_name + ' ' + guest.last_name}]}
                                         </a>
                                     </div>
                             </ul>
@@ -76,7 +77,7 @@
 
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
+        <script src="../../dist/js/bootstrap.min.js"></script>
     </body>
 
 </html>

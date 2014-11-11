@@ -10,7 +10,7 @@ def guests_by_party():
 
 def one_party():
     parties = dbsesh.query(newmod.Party).limit(50).all()
-    print parties
+    # print parties
     return [party.as_dict() for party in parties]
 
 def guests_by_guest():
@@ -18,6 +18,9 @@ def guests_by_guest():
     jsguests = {'guests': [guest.as_json() for guest in guests]}
     return jsguests
 
+def filters():
+    groupings = dbsesh.query(newmod.Party.grouping).distinct().all()
+    
 guests_by_guest()
 
 # print parties
