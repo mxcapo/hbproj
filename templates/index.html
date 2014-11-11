@@ -22,7 +22,7 @@
              Guests<span class="caret"></span>
             </a>
                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">my goal</a></li>
+                  <li><a href="/#/view/parties">Parties</a></li>
                   <li><a href="#">is to put</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">Links</li>
@@ -59,15 +59,15 @@
    </nav>
    </div>
 <!-- End Navbar -->
-   <!-- Small button group -->
 
-<div class="container-fluid" ng-controller="FilterCtrl as filter">
+<!-- Small button group -->
+<!-- <div class="container-fluid" ng-controller="FilterCtrl as filter">
    <div class="btn-group">
       <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
          View by: <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-         <li><a href="#">Party</a></li>
+         <li><a href="/#/parties">Party</a></li>
          <li><a href="#">Guest</a></li>
       </ul>
    </div>
@@ -79,8 +79,8 @@
          <li><a href="#">Meredith</a></li>
          <li><a href="#">Jonathan</a></li>
       </ul>
-   </div>
-   <div class="btn-group">
+   </div> -->
+  <!--  <div class="btn-group">
       <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
          Group  <span class="caret"></span>
       </button>
@@ -119,11 +119,11 @@
          <li><a href="#">Green</a></li>
       </ul>
    </div>
-</div>
+</div> -->
    <!-- End small button group -->
 
    <!-- Party boxes -->
-   <div class="container-fluid" ng-controller="PartyListCtrl">
+   <!-- <div class="container-fluid" ng-controller="PartyListCtrl">
    <div class="row row-party">
    <div class="col-sm-4" ng-repeat="party in parties | filter:query | orderBy:orderProp">
        <div class="panel panel-success">
@@ -132,7 +132,7 @@
                    <table class="table">
                        <tr>
                            <td ng-repeat="guest in party.guests">
-                               <h3 class="panel-title">{[{guest.first_name + ' ' + guest.last_name}]}</h3>
+                               <h3 class="panel-title" ng-bind-template="{[{guest.first_name + ' ' + guest.last_name}]}"></h3>
                            </td>
                        </tr>
                    </table>
@@ -141,16 +141,19 @@
            <div class="panel-body">
                <div class="list-group">
                    <a href="#" class="list-group-item"><strong>
-                   Side:</strong> {[{party.side}]}</a>
-                   <a href="#" class="list-group-item"><strong>
-                   Group:</strong> {[{party.grouping}]}</a>
+                   Side:</strong>
+                   <span ng-bind-template="{[{party.side}]}"></span>
+                   </a>
+                   <a href="#" class="list-group-item" ><strong>
+                   Group: </strong>
+                   <span ng-bind-template="{[{party.grouping}]}"></span>
+                   </a>
                    <ul class="list-group">
                        <li class="list-group-item"><strong>
                            Guests:</strong>
                        </li>
                            <div class="list-group">
-                               <a href="#" class="list-group-item" ng-repeat="guest in party.guests">
-                               {[{guest.first_name + ' ' + guest.last_name}]}
+                               <a href="#" class="list-group-item" ng-repeat="guest in party.guests" ng-bind-template="{[{guest.first_name + ' ' + guest.last_name}]}">
                                </a>
                            </div>
                    </ul>
@@ -159,9 +162,9 @@
        </div>
    </div>
    </div>
-   </div>
+   </div> -->
    <!-- End Party Boxes -->
-
+<div ng-view></div>
 
    <!-- JQuery & Bootstrap -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

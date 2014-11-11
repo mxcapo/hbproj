@@ -19,8 +19,16 @@ def guests_by_guest():
     return jsguests
 
 def filters():
-    groupings = dbsesh.query(newmod.Party.grouping).distinct().all()
-    
-guests_by_guest()
+    g = dbsesh.query(newmod.Party.grouping, newmod.Party.side).distinct().all()
+    d = {}
+    for tup in g:
+        if tup[1] in d.keys():
+            d[tup[1]].append(tup[0])
+        else:
+            d[tup[1]] = [tup[0]]
+    # print d
+    return [d]
+
+
 
 # print parties

@@ -1,10 +1,10 @@
 """flask web app to communicate with browser"""
 from flask import Flask, render_template, redirect, request, g, session as flasksesh
 from flask import make_response
-import newmod
 from newmod import session as dbsesh
 from json import dumps
-from dbcontrol import guests_by_party, one_party, guests_by_guest
+from dbcontrol import guests_by_party, one_party, guests_by_guest, filters
+import filters
 
 
 app = Flask(__name__)
@@ -16,23 +16,17 @@ def index():
 
 @app.route('/dash')
 def dash():
-    return render_template("dash.html")
+    pass
 
 @app.route('/base')
 def base():
-    return render_template('base.html')
-
-@app.route('/view')
-def view():
     pass
 
-@app.route('/view/party')
-def view_guests_by_party():
-    view_parties = guests_by_party()
-    view_parties_js = make_response(dumps(view_parties))
-    view_parties_js.mimetype = "application/json"
-    # render_template('viewparties.html')
-    return view_parties_js
+# @app.route('/view')
+# def view():
+#     g = make_response(dumps(filters()))
+#     g.mimetype = "application/json"
+#     return g
 
 @app.route('/view/guests')
 def view_guests_by_guest():
@@ -40,16 +34,12 @@ def view_guests_by_guest():
     view_guests.mimetype = "application/json"
     return view_guests
 
-@app.route('/parties')
+@app.route('/view/parties')
 def parties():
     gparties = one_party()
     jsgparties = make_response(dumps(gparties))
     jsgparties.mimetype = "application/json"
     return jsgparties
-
-@app.route('/angular')
-def angular():
-    return render_template("partycard.html")
 
 if __name__ == '__main__':
     app.run(debug = True)

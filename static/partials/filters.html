@@ -1,0 +1,62 @@
+<!-- Small button group -->
+<div class="container-fluid" ng-controller="FilterCtrl as filter">
+   <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+         View by: <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+         <li><a href="/#/view/parties" ng-watch="party-card">Party</a></li>
+         <li><a href="#">Guest</a></li>
+      </ul>
+   </div>
+   <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+         Side  <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+         <li><a href="#">Meredith</a></li>
+         <li><a href="#">Jonathan</a></li>
+      </ul>
+   </div>
+   <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+         Group  <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+         <li><a href="#">Meredith</a></li>
+         <li><a href="#">Jonathan</a></li>
+      </ul>
+   </div>
+   <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+         Priority  <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+         <li><a href="#">High</a></li>
+         <li><a href="#">Medium</a></li>
+         <li><a href="#">Low</a></li>
+      </ul>
+   </div>
+   <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+         Probability  <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+         <li><a href="#">High</a></li>
+         <li><a href="#">Medium</a></li>
+         <li><a href="#">Low</a></li>
+      </ul>
+   </div>
+   <div class="btn-group">
+      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
+         Flag RYG  <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu">
+         <li><a href="#">Red</a></li>
+         <li><a href="#">Yellow</a></li>
+         <li><a href="#">Green</a></li>
+      </ul>
+   </div>
+</div>
+   <!-- End small button group -->
+   <div ng-view></div>

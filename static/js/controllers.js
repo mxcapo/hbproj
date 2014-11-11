@@ -4,7 +4,7 @@ var weddingAppControllers = angular.module('weddingAppControllers', []);
 
 weddingApp.controller('PartyListCtrl', function ($scope, $http)
 {
-    $http.get('/parties').success(function (data)
+    $http.get('/view/parties').success(function (data)
     {
         console.log(data);
         $scope.parties = data;
@@ -18,10 +18,6 @@ weddingApp.controller('PartyListCtrl', function ($scope, $http)
     
 });
 
-weddingApp.controller('FilterCtrl', function($scope, $http)
-{
-    
-})
 
 // weddingApp.directive('partyCard', function ($http) {
 //     function link(scope, element) {

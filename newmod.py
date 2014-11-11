@@ -119,7 +119,7 @@ def drop_create_all():
     Base.metadata.create_all(engine)
 
 def main():
-    create_database()
+    pass
 
 if __name__ == "__main__":
     main()
