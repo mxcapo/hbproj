@@ -1,7 +1,7 @@
 'use strict';
 
 /** App Module Init **/
-var weddingApp = angular.module('weddingApp', ['ngRoute', weddingAppControllers]);
+var weddingApp = angular.module('weddingApp', ['ngRoute', 'weddingAppControllers']);
 
 weddingApp.config(function ($routeProvider, $interpolateProvider)
     {
@@ -9,9 +9,17 @@ weddingApp.config(function ($routeProvider, $interpolateProvider)
         {
             templateUrl: "../static/partials/partycard.html",
             controller: "PartyListCtrl"
+        }).when('/view',
+        {
+            templateUrl: "../static/partials/f2.html",
+            controller: "FilterCtrl"
+        }).when('/filtertest',
+        {
+            templateUrl: "../templates/filtertest.html",
+            controller: "FilterTestCtrl"
         }).otherwise(
         {
-            redirectTo: '/'
+            redirectTo:"/"
         });
         $interpolateProvider.startSymbol('{[{').endSymbol('}]}');
     });

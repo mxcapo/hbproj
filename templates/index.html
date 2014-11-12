@@ -9,6 +9,8 @@
       <script src="../static/bower_components/angular-route/angular-route.js"></script>
       <script src="../static/js/app.js"></script>
       <script src="../static/js/controllers.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
    </head>
    <body>
    <!-- Navbar -->
@@ -18,11 +20,11 @@
          <ul class="nav navbar-nav">
             <li><a href="#">Home</a></li>
             <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <a href="#/view" class="dropdown-toggle" data-toggle="dropdown">
              Guests<span class="caret"></span>
             </a>
                <ul class="dropdown-menu" role="menu">
-                  <li><a href="/#/view/parties">Parties</a></li>
+                  <li><a href="/#/view">Parties</a></li>
                   <li><a href="#">is to put</a></li>
                   <li class="divider"></li>
                   <li class="dropdown-header">Links</li>
@@ -59,116 +61,8 @@
    </nav>
    </div>
 <!-- End Navbar -->
-
-<!-- Small button group -->
-<!-- <div class="container-fluid" ng-controller="FilterCtrl as filter">
-   <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         View by: <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li><a href="/#/parties">Party</a></li>
-         <li><a href="#">Guest</a></li>
-      </ul>
-   </div>
-   <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Side  <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li><a href="#">Meredith</a></li>
-         <li><a href="#">Jonathan</a></li>
-      </ul>
-   </div> -->
-  <!--  <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Group  <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li><a href="#">Meredith</a></li>
-         <li><a href="#">Jonathan</a></li>
-      </ul>
-   </div>
-   <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Priority  <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li><a href="#">High</a></li>
-         <li><a href="#">Medium</a></li>
-         <li><a href="#">Low</a></li>
-      </ul>
-   </div>
-   <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Probability  <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li><a href="#">High</a></li>
-         <li><a href="#">Medium</a></li>
-         <li><a href="#">Low</a></li>
-      </ul>
-   </div>
-   <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Flag RYG  <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li><a href="#">Red</a></li>
-         <li><a href="#">Yellow</a></li>
-         <li><a href="#">Green</a></li>
-      </ul>
-   </div>
-</div> -->
-   <!-- End small button group -->
-
-   <!-- Party boxes -->
-   <!-- <div class="container-fluid" ng-controller="PartyListCtrl">
-   <div class="row row-party">
-   <div class="col-sm-4" ng-repeat="party in parties | filter:query | orderBy:orderProp">
-       <div class="panel panel-success">
-           <div class="panel-heading">
-               <div class="panel-title">
-                   <table class="table">
-                       <tr>
-                           <td ng-repeat="guest in party.guests">
-                               <h3 class="panel-title" ng-bind-template="{[{guest.first_name + ' ' + guest.last_name}]}"></h3>
-                           </td>
-                       </tr>
-                   </table>
-               </div>
-           </div>
-           <div class="panel-body">
-               <div class="list-group">
-                   <a href="#" class="list-group-item"><strong>
-                   Side:</strong>
-                   <span ng-bind-template="{[{party.side}]}"></span>
-                   </a>
-                   <a href="#" class="list-group-item" ><strong>
-                   Group: </strong>
-                   <span ng-bind-template="{[{party.grouping}]}"></span>
-                   </a>
-                   <ul class="list-group">
-                       <li class="list-group-item"><strong>
-                           Guests:</strong>
-                       </li>
-                           <div class="list-group">
-                               <a href="#" class="list-group-item" ng-repeat="guest in party.guests" ng-bind-template="{[{guest.first_name + ' ' + guest.last_name}]}">
-                               </a>
-                           </div>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </div>
-   </div>
-   </div> -->
-   <!-- End Party Boxes -->
 <div ng-view></div>
 
-   <!-- JQuery & Bootstrap -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-   <script src="../static/bootstrap/dist/js/bootstrap.min.js"></script>
 
    </body>
    </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="weddingApp">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="../static/bower_components/angular/angular.js">
+    </script>
+    <script src="../static/bower_components/angular-route/angular-route.js">
+    </script>
+    <script src="../static/js/app.js">
+    </script>
+    <script src="../static/js/controllers.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body ng-controller="FilterTestCtrl">
+    <div ng-repeat="(prop, ignoredValue) in groupings" ng-init="filter[prop]={}">
+        <b>{[{prop | capitalizeFirst}]}:</b>
+
+        <span class="quarter" ng-repeat="opt in getOptionsFor(prop)">
+            <b><input type="checkbox" ng-model="filter[prop][opt]">
+            {[{opt}]}</b>
+        </span>
+    </div>
+    <div ng-controller="PartyListCtrl">
+        <div ng-repeat="party in filtered=(parties | filter:filterByProperties)">
+            {[{party}]}
+        </div>
+    </div>
+
+</body>
+</html>

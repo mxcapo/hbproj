@@ -66,7 +66,7 @@ class Guest(Base):
     probability = saCol(saStr(20), nullable=True)
     gender      = saCol(saStr(1), nullable=True)
     guest_type  = saCol(saStr(30), default="wedding")
-    party       = relationship("Party", backref="guests")
+    party       = relationship("Party", lazy='joined', backref="guests")
 
 
     # __mapper_args__ = {'polymorphic_identity': 'guest',

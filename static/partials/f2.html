@@ -1,4 +1,3 @@
-
 <!-- Small button group -->
 <div class="container-fluid">
    <div class="btn-group">
@@ -15,8 +14,8 @@
          Side  <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a href></a></li>
-        <li><a href>Jonathan</a></li>
+         <li><a href="#">Meredith</a></li>
+         <li><a href="#">Jonathan</a></li>
       </ul>
    </div>
    <div class="btn-group">
@@ -24,7 +23,8 @@
          Group  <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-         <li ng-repeat="grouping in groupings"><a href="#/view/{[{grouping}]}">{[{grouping}]}</a></li>
+         <li><a href="#">Meredith</a></li>
+         <li><a href="#">Jonathan</a></li>
       </ul>
    </div>
    <div class="btn-group">
@@ -60,45 +60,5 @@
 </div>
    <!-- End small button group -->
 
-<!-- Party boxes -->
-   <div class="container-fluid" ng-controller="PartyListCtrl">
-   <div class="row row-party">
-   <div class="col-sm-4" ng-repeat="party in parties | filter:sideQ | orderBy:orderProp | filter:query">
-       <div class="panel panel-success">
-           <div class="panel-heading">
-               <div class="panel-title">
-                   <table class="table">
-                       <tr>
-                           <td ng-repeat="guest in party.guests">
-                               <h3 class="panel-title" ng-bind-template="{[{guest.first_name + ' ' + guest.last_name}]}"></h3>
-                           </td>
-                       </tr>
-                   </table>
-               </div>
-           </div>
-           <div class="panel-body">
-               <div class="list-group">
-                   <a href="#" class="list-group-item"><strong>
-                   Side:</strong>
-                   <span ng-bind-template="{[{party.side}]}"></span>
-                   </a>
-                   <a href="#" class="list-group-item" ><strong>
-                   Group: </strong>
-                   <span ng-bind-template="{[{party.grouping}]}"></span>
-                   </a>
-                   <ul class="list-group">
-                       <li class="list-group-item"><strong>
-                           Guests:</strong>
-                       </li>
-                           <div class="list-group">
-                               <a href="#" class="list-group-item" ng-repeat="guest in party.guests" ng-bind-template="{[{guest.first_name + ' ' + guest.last_name}]}">
-                               </a>
-                           </div>
-                   </ul>
-               </div>
-           </div>
-       </div>
-   </div>
-   </div>
-   </div>
-   <!-- End Party Boxes -->
+<!-- trying directive to insert boxes -->
+
