@@ -1,4 +1,4 @@
-
+<div ng-controller="FilterCtrl">
 <!-- Small button group -->
 <div class="container-fluid">
    <div class="btn-group">
@@ -10,21 +10,12 @@
          <li><a href="#">Guest</a></li>
       </ul>
    </div>
-   <div class="btn-group">
+   <div class="btn-group" ng-repeat="(prop, ignoredValue) in groupings" ng-init="filter[prop]">
       <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Side  <span class="caret"></span>
+         {[{prop | capitalizeFirst}]}  <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a href></a></li>
-        <li><a href>Jonathan</a></li>
-      </ul>
-   </div>
-   <div class="btn-group">
-      <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-         Group  <span class="caret"></span>
-      </button>
-      <ul class="dropdown-menu" role="menu">
-         <li ng-repeat="grouping in groupings"><a href="#/view/{[{grouping}]}">{[{grouping}]}</a></li>
+        <li ng-repeat="opt in getOptionsFor(prop)"><input type="checkbox" ng-model="filter[prop][opt]">{[{opt}]}</li></li>
       </ul>
    </div>
    <div class="btn-group">
@@ -63,7 +54,7 @@
 <!-- Party boxes -->
    <div class="container-fluid" ng-controller="PartyListCtrl">
    <div class="row row-party">
-   <div class="col-sm-4" ng-repeat="party in parties | filter:sideQ | orderBy:orderProp | filter:query">
+   <div class="col-sm-4" ng-repeat="party in filtered=(parties | filter:filterByProperties | orderBy:orderProp | filter:query)">
        <div class="panel panel-success">
            <div class="panel-heading">
                <div class="panel-title">
@@ -102,3 +93,4 @@
    </div>
    </div>
    <!-- End Party Boxes -->
+</div>

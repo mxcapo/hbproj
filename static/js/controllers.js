@@ -26,6 +26,50 @@ weddingApp.controller('FilterCtrl', function ($scope, $http)
             console.log(data);
             $scope.groupings = data;
         });
+
+        $scope.filter = {};
+
+        $scope.getOptionsFor = function (propName)
+        {
+            // console.log(propName);
+            var list = $scope.groupings[propName];
+            // console.log(list);
+            return ($scope.groupings[propName] || [])
+            // .map(function (p)
+            // {
+            //     console.log(p["ok"]);
+            //     console.log(p[propName]);
+            //     console.log(p);
+            // });
+            .filter(function (p, idx, arr)
+            {
+                return arr.indexOf(p) === idx;
+            });
+        };
+        $scope.filterByProperties = function (party)
+        {
+            var matchesAND = true;
+            for (var prop in $scope.filter)
+            {
+                if (noSubFilter($scope.filter[prop]))
+    continue;
+                if (!$scope.filter[prop][party[prop]])
+                {
+                    matchesAND = false;
+                    break;
+                }
+            }
+            return matchesAND;
+        };
+
+    function noSubFilter(subFilterObj)
+    {
+        for (var key in subFilterObj)
+        {
+            if (subFilterObj[key]) return false;
+        }
+        return true;
+    }
     });
 
 weddingApp.controller('FilterTestCtrl', function ($scope, $http)

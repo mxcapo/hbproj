@@ -30,6 +30,9 @@ def blank_view():
     print gr
     return make_response(dumps(groups_side_filters()))
 
+@app.route('/view')
+def trying():
+    return blank_view()
 @app.route('/filtertest')
 def filter_test():
     return render_template('filtertest.html')
