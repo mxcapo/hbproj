@@ -1,0 +1,152 @@
+party_id,side,party_group,addr_1,addr_2,city,state,zip,country
+1,Jon,Credit Suisse,,,New York,NY,,USA
+2,Meredith,Family (Dad),,,,,,
+3,Meredith,Family (Dad),,,,,,
+4,Jon,Family (Mom),,,,NJ,,USA
+5,Meredith,Family (Immediate),570 Wittich Terrace,,River Vale,NJ,7675,USA
+6,Jon,Friends (Dad),1120 Harbor Rd,,Hewlett,NY,11557,USA
+7,Meredith,Family (Dad),10054 Plank Road,,Montville,OH,44064,USA
+8,Meredith,Family (Dad),138 Mallard Pointe Way,,Athens,GA,30606,USA
+9,Jon,College,,,San Francisco,CA,,USA
+10,Meredith,Family (Dad),15 N. Cape Trail,,Rockaway,NJ,7866,USA
+11,Meredith,Family (Mom),898 Marion Place,,Ridgefield,NJ,7657,USA
+12,Meredith,Family (Mom),2281 Thorn Lodge Drive,,Mississauga,Ontario,L5K 1K4,Canada
+13,Jon,Credit Suisse,,,,NY,,USA
+14,Jon,Friends (Mom),773C Columbia Street,,New Milford,NJ,7646,USA
+15,Jon,Haas,1389 Jefferson Street,Apartment C603,Oakland,CA,94612,USA
+16,Jon,Credit Suisse,,,,,,
+17,Meredith,Family (Dad),,,,,,
+18,Jon,High School,,,,,,
+19,Meredith,High School,,,,,,
+20,Jon,Haas,801 Indiana St,Apartment 261,San Francisco,CA,94107,USA
+21,Meredith,Family (Dad),1104 Mill Pointe,,Watkinsville,GA,30677,USA
+22,Jon,Haas,,,San Francisco,CA,,USA
+23,Jon,Credit Suisse,141 Pelham Road,,Philadelphia,PA,19119,USA
+24,Meredith,Family (Dad),,,,NJ,,USA
+25,Meredith,Friends (Mom),,,,CT,,USA
+26,Meredith,Family (Dad),3475 Oak Valley Road NE,Apartment 1050,Atlanta,GA,30326,USA
+27,Meredith,Levi Strauss,,,,CA,,USA
+28,Jon,High School,32 Penn Lyle Road,,Princeton Junction,NJ,8550,USA
+29,Meredith,Friends (Dad),,,,,,
+30,Meredith,Friends (Dad),,,,,,
+31,Meredith,Friends (Dad),,,,,,
+32,Meredith,Family (Mom),22 Woodside Avenue,,Malverne,NY,11565,USA
+33,Meredith,Family (Dad),72 Teak Road,,Dumont,NJ,7628,USA
+34,Meredith,Friends (Dad),,,,,,
+35,Jon,Family (Dad),,,,CA,,USA
+36,Meredith,Friends (Mom),,,,,,
+37,Jon,College,,,San Francisco,CA,,USA
+38,Jon,High School,,,,,,
+39,Meredith,Family (Mom),66 East Clinton Avenue,,Bergenfield,NJ,7621,USA
+40,Jon,High School,,,,,,
+41,Meredith,NYC Friends,,,,,,
+42,Jon,High School,,,,,,
+43,Jon,High School,9 Simsbury Drive,,Vorhees,NJ,8043,USA
+44,Meredith,Levi Strauss,3501 Divisadero St.,Apartment 14,San Francisco,CA,94123,USA
+45,Meredith,Family (Mom),23737 Samuel Adams Circle,,Millsboro,DE,19966,USA
+46,Meredith,Family (Dad),1101 Juniper Street,Apartment 1123,Atlanta,GA,30309,USA
+47,Jon,College,,,,,,
+48,Jon,Friends (Mom),,,,,,
+49,Jon,Family (Dad),,,,,,
+50,Jon,Family (Dad),,,,,,
+51,Jon,Haas,3151 Eton Ave,Apartment 3,Berkeley,CA,94705,USA
+52,Meredith,High School,,,,,,
+53,Meredith,Family (Dad),35 Livingston Avenue,,Kearny,NJ,7032,USA
+54,Jon,Haas,,,,,,
+55,Jon,College,,,San Francisco,CA,,USA
+56,Meredith,Friends (Mom),,,,,,
+57,Jon,College,,,,,,
+58,Jon,Haas,,,,,,
+59,Jon,Haas,,,,,,
+60,Jon,Friends (Mom),,,,FL,,USA
+61,Meredith,High School,265 Massachusetts Avenue,,Haworth,NJ,7641,USA
+62,Jon,Family (Mom),,,,,,
+63,Jon,Friends (Dad),,,,,,
+64,Jon,Family (Mom),,,,,,
+65,Jon,Family (Mom),,,,,,
+66,Jon,Family (Mom),,,,,,
+67,Jon,High School,2710 S. Veitch Street,Apartment 203,Arlington,VA,22206,USA
+68,Meredith,Friends (Mom),,,,NJ,,USA
+69,Jon,Friends (Dad),12 Ridgeview Drive,,Armonk,NY,10504,USA
+70,Jon,Friends (Dad),,,,,,
+71,Meredith,Family (Mom),,,,NJ,,USA
+72,Jon,Haas,,,,,,
+73,Jon,High School,,,,,,
+74,Meredith,Friends (Mom),,,,,,
+75,Jon,Haas,5560 Fremont Street,,Oakland,CA,94608,USA
+76,Jon,Friends (Dad),30 Thaxton Drive,,Hewlett Harbor,NY,11557,USA
+77,Jon,LinkedIn,,,,,,
+78,Jon,Haas,,,San Francisco,CA,,USA
+79,Jon,Friends (Dad),,,West Palm Beach,FL,,USA
+80,Meredith,Friends (Mom),3206 Cabarrus Drive,,Greensboro,NC,27407,USA
+81,Meredith,Family (Dad),12 Woodland Court,,Wayne,NJ,07470-3840,USA
+82,Jon,Friends (Dad),,,West Palm Beach,FL,,USA
+83,Jon,Haas,3508 Clay Street,,San Francisco,CA,94118,USA
+84,Jon,Haas,,,,,,
+85,Meredith,Family (Mom),,,,NJ,,USA
+86,Meredith,Family (Immediate),570 Wittich Terrace,,River Vale,NJ,7675,USA
+87,Jon,High School,,,,,,
+88,Meredith,Family (Mom),1 Shoal Drive,,Barnegat,NJ,08005-5539,USA
+89,Meredith,High School,,,,,,
+90,Meredith,Friends (Mom),,,,NJ,,USA
+91,Meredith,NYC Friends,,,,,,
+92,Jon,Family (Dad),,,,NJ,,USA
+93,Meredith,Friends (Mom),,,,,,
+94,Meredith,Friends (Mom),,,,,,
+95,Meredith,Family (Dad),,,,NJ,,USA
+96,Meredith,Family (Immediate),,,,,,USA
+97,Meredith,Family (Immediate),,,,,,USA
+98,Jon,College,,,,,,
+99,Meredith,Family (Immediate),121 Kensington Oval,,New Rochelle,NY,10805,USA
+100,Meredith,Family (Immediate),570 Wittich Terrace,,River Vale,NJ,7675,USA
+101,Jon,Credit Suisse,,,,NY,,USA
+102,Meredith,Family (Mom),793 Lafayette Avenue,Apartment 4,Hawthorne,NJ,7506,USA
+103,Jon,Family (Immediate),7070 Tradition Cove Lane East,,West Palm Beach,FL,33412,USA
+104,Jon,High School,108 Erie Street,Apartment 203,Jersey City,NJ,7302,USA
+105,Jon,Family (Dad),,,,,,
+106,Jon,College,PO Box 371,,Zephyr Cove,NV,89448,USA
+107,Meredith,Family (Dad),425 Broadway,Apartment 7,Somerville,MA,2145,USA
+108,Meredith,Family (Dad),,,,,,
+109,Jon,College,,,,,,
+110,Meredith,Family (Dad),72 Teak Road,,Dumont,NJ,7628,USA
+111,Jon,Family (Mom),,,,,,
+112,Meredith,Family (Dad),35 Livingston Avenue,,Kearny,NJ,7032,USA
+113,Meredith,Family (Dad),72 Teak Road,,Dumont,NJ,7628,USA
+114,Jon,Family (Mom),,,,,,
+115,Meredith,Family (Dad),350 Lake Crest Drive,,Roswell,GA,30075,USA
+117,Jon,Family (Mom),,,Wayne,NJ,,USA
+118,Jon,High School,,,,,,
+119,Jon,High School,754 Greenwich Street,Apartment 2A,New York,NY,10014,USA
+120,Jon,College,25 Inky Lane,,Hopewell Junction,NY,12533,USA
+121,Jon,College,,,,,,
+122,Meredith,Family (Immediate),570 Wittich Terrace,,River Vale,NJ,7675,USA
+123,Meredith,NYC Friends,351 E 4th St,Apartment 1C,New York,NY,10009,USA
+124,Meredith,NYC Friends,,,,,,
+125,Jon,Family (Mom),7070 Tradition Cove Lane East,,West Palm Beach,FL,33412,USA
+126,Jon,Friends (Dad),304 Beech Spring Road,,South Orange,NJ,7079,USA
+127,Meredith,Family (Immediate),300 Third Avenue,,Westwood,NJ,7675,USA
+128,Meredith,High School,3914 Marathon Street,,Los Angeles,CA,90029,USA
+129,Meredith,Friends (Mom),,,,NJ,,USA
+130,Meredith,College,1108 Drake Street SW,,Vienna,VA,22180,USA
+131,Jon,Family (Mom),,,,,,
+132,Meredith,NYC Friends,89 Murray Street,Apartment 8W,New York,NY,10007,USA
+133,Meredith,College,33 Woodlands Road,,London,,E17 3LD,United Kingdom
+134,Meredith,High School,3901 Los Feliz Boulevard,Apartment 104,Los Angeles,CA,90027,USA
+135,Meredith,NYC Friends,416 East 65th Street,Apartment 4I,New York,NY,10065,USA
+136,Jon,College,,,,,,
+137,Meredith,Family (Dad),45 Erie Avenue,,Atlantic Beach,NY,11509,USA
+138,Meredith,High School,265 Massachusetts Avenue,,Haworth,NJ,7641,USA
+139,Jon,Friends (Mom),,,,,,
+140,Jon,SF Friends,4 Bayside Court,,Richmond,CA,94804,USA
+141,Jon,Family (Mom),,,,,,
+142,Meredith,Family (Dad),45 Erie Avenue,,Atlantic Beach,NY,11509,USA
+143,Jon,Friends (Mom),,,,,,
+144,Jon,NYC Friends,,,New York,NY,,USA
+145,Jon,High School,,,London,,,United Kingdom
+146,Jon,LinkedIn,,,,,,
+147,Meredith,Family (Dad),234 Willow Avenue,Apartment 2,Garwood,NJ,7027,USA
+148,Jon,Friends (Mom),,,,,,
+149,Meredith,Friends (Mom),,,,NJ,,USA
+150,Meredith,Family (Dad),45 Erie Avenue,,Atlantic Beach,NY,11509,USA
+151,Meredith,Family (Immediate),1285 Sutter Street,Unit 202,San Francisco,CA,94109,USA
+120,Jon,College,25 Inky Lane,,Hopewell Junction,NY,12533,USA

@@ -1,0 +1,161 @@
+"""hb project requirements"""
+
+1. create event
+    A. date, location, time
+    B. empty parties table
+    C. high-level goals/parameters
+        a. guest count
+        b. event budget
+        c. target cost per head
+    D. empty guests table
+2. edit event
+    A. add known cost per head
+    B. add funding sources
+    C. add/account for expenses (dashboard % of budget visual)
+    D. build budget
+        a. reception
+            1.) base catering/alcohol
+            2.) cake
+            3.) catering upgrades
+            4.) vendor meals
+            5.) other
+        b. invitations
+            1.) save the date
+            2.) invitations/reception packet
+            3.) other
+        c. photo/video
+            1.) photographer
+            2.) videographer
+            3.) other
+        d. favors/gifts
+            1.) arrival bag
+            2.) groomsman gifts
+            3.) bridesmaid gifts
+            4.) reception favors
+            5.) other
+        e. attire
+            1.) dress
+            2.) dress alterations
+            3.) second dress
+            4.) second dress alterations
+            5.) shoes
+            6.) jewelry & accessories
+            7.) hair & makeup (bride)
+            8.) hair & makeup (bridal party)
+            9.) tux
+            10.) other
+        f. ceremony
+            1.) ceremony fee
+            2.) officiant
+            3.) other
+        g. decor
+            1.) furniture rental
+            2.) decorations
+            3.) aisle runner
+            4.) guest book
+            5.) escort cards
+            6.) wedding programs
+            7.) candles
+            8.) confetti
+            9.) place cards
+            10.) flowers
+                a.) groom boutonniere
+                b.) groomsman boutonniere
+                c.) bride bouquet
+                d.) bridesmaid bouqets
+                e.) MOB/MOG corsages
+                f.) FOB/FOG boutonnieres
+            11.) card box
+            12.) chair covers
+            13.) centerpieces
+            14.) lighting
+            15.) chuppah
+            16.) linen rentals
+            17.) dinnerware rentals
+            18.) other rentals
+            19.) bathroom baskets
+            20.) other
+        h. entertainment
+            1.) ceremony musicians
+            2.) reception band
+            3.) slide show av
+            4.) other
+        i. logistics
+            1.) guest venue transportation
+            2.) wedding party transportation
+            3.) other
+        j. rehearsal dinner
+            1.) food/alcohol
+            2.) other
+        k. brunch
+            1.) food/alcohol
+            2.) other
+        l. after party
+            1.) food/alcohol
+            2.) other
+        m. planner
+        n. other
+3. add/remove guest
+    A. new party
+        a. add guest to party
+            1.) last name
+            2.) first name
+            3.) priority (nullable)
+            4.) probability (nullable)
+            5.) side
+            6.) group
+        b. add party contact (nullable)
+            1.) email
+            2.) snail mail
+    B. edit party
+        a. remove guest from party
+        b. remove guest from event
+4. change guest
+5. flag "UNKNOWN" fields
+    A. dashboard - display unknowns to solve
+    B. "UNKNOWN" mark adds to list of to do's
+6. view/search guests by
+    A. party (grouping on/off)
+    B. side
+    C. group
+    D. priority
+    E. probability
+    F. location
+    G. rehearsal dinner
+    H. wedding party
+    I. bachelor party
+    J. bachelorette party
+    K. bridal shower
+7. attendance summary
+    A. view mode
+        a. cost (based on per head)
+        b. quantity
+    B. total mode
+        a. overall total
+        b. probability weighted
+    C. format
+        a. columns
+            1.) bride
+                a.) high priority
+                b.) medium priority
+                c.) low priority
+                d.) high + medium
+            2.) groom
+                a.) high priority
+                b.) medium priority
+                c.) low priority
+                d.) high + medium
+            3.) overall
+                a.) high priority
+                b.) medium priority
+                c.) low priority
+                d.) high + medium
+8. create seating plan
+    A. create tables
+    B. add guest to table
+        a. search for guest (#6)
+        b. add all guests from a party
+        c. add individual guests from a party
+    C. remove guest from table (list of unplaced)
+    D. move guest from one table to another
+    E. flag tables/guests that might be issues

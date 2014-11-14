@@ -1,0 +1,39 @@
+"""hammering out data structure for hb project"""
+
+Party: (A PARTY/USER HAS MANY GUESTS/RATINGS)
+__tablename__ = parties
+id: integer
+addr_1 = string
+addr_2 = string
+city = string
+state = string
+zip = string
+country = string
+
+Guest: (A GUEST/RATING BELONGS TO ONE PARTY/USER)
+__tablename__ = guests
+id: integer
+party_id: integer, FOREIGN KEY('party.id')
+    party = relationship("Party", backref=backref("guests", order_by=id))
+surname: string
+givenname: string
+side: string
+side_group: string
+priority: string
+probability: string
+
+a party has many guests
+a guest belongs to one party
+    a groomsman is a special kind of guest
+    a bridesmaid is a special kind of guest
+    an out-of-town guest is a special kind of guest
+    a rehearsal dinner guest is a special kind of guest
+        a primary rehearsal dinner guest is a special kind of rehearsal dinner guest
+        an extended rehearsal dinner guest is a special kind of rehearsal dinner guest
+            an out-of-town guest is an extended rehearsal dinner guest EXCEPT when an out-of-town guest is a primary rehearsal dinner guest
+    a bachelor party guest is a special kind of guest
+    a bachelorette party guest is a special kind of guest
+    a bridal shower guest is a special kind of guest
+        an extended rehearsal dinner guest SHOULD NOT BE a bridal shower guest
+a table has many guests
+a guest belongs to one table
